@@ -773,7 +773,6 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   }
 
   /* Pricing card - product thumbnail */
-  .price-card{ padding-top: 80px; } /* make room for thumb up top */
   .price-card__thumb{
     position: absolute;
     top: 20px; right: 28px;
@@ -810,7 +809,6 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   }
   @media (max-width: 1100px){
     .price-card__thumb{ display: none; }
-    .price-card{ padding-top: 48px; }
   }
 
   /* ============ ENQUIRE (lead form) ============ */
@@ -960,7 +958,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     background: var(--cream);
     color: #0A0A12;
     border-radius: 28px;
-    padding: 48px;
+    padding: 80px 48px 48px; /* extra top to clear the bestseller badge + thumb */
     position: relative;
   }
   .price-card__tag{
@@ -1417,8 +1415,8 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     /* Pricing */
     .pricing{ padding: 64px 0; }
     .price-grid{ gap: 18px; }
-    .price-card{ padding: 28px 24px; border-radius: 22px; }
-    .price-card__tag{ top: 14px; right: 14px; font-size: 11px; padding: 6px 10px; }
+    .price-card{ padding: 56px 24px 28px; border-radius: 22px; }
+    .price-card__tag{ top: 14px; left: 14px; right: auto; font-size: 11px; padding: 6px 10px; }
     .price-card__price{ font-size: clamp(72px, 20vw, 100px); }
     .price-card__price .cur{ padding-top: 8px; }
     .price-card__price .per{ padding-top: 18px; padding-bottom: 10px; font-size: 12px; }
