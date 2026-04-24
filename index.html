@@ -1240,6 +1240,13 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     color: var(--warm);
   }
 
+  /* ============ REVIEWS ============ */
+  .reviews{ padding: 100px 0; border-top: 1px solid var(--line); text-align: center; }
+  .reviews__head{ margin-bottom: 48px; }
+  .reviews__head .sec-label{ justify-content: center; color: var(--accent-a); }
+  .reviews__head .sec-label::before{ background: var(--accent-a); }
+  .reviews__widget{ max-width: 1200px; margin: 0 auto; text-align: left; }
+
   /* ============ FAQ ============ */
   .faq{ padding: 110px 0; border-top: 1px solid var(--line); }
   .faq-grid{ display: grid; grid-template-columns: 1fr 1.6fr; gap: 60px; }
@@ -1526,6 +1533,10 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     /* Testimonial */
     .testimonial{ padding: 44px 0; }
     .testi-quote{ font-size: clamp(24px, 6.5vw, 32px); }
+
+    /* Reviews */
+    .reviews{ padding: 44px 0; }
+    .reviews__head{ margin-bottom: 28px; }
 
     /* FAQ */
     .faq{ padding: 44px 0; }
@@ -2195,6 +2206,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       over who wore the horse mask better. Best £150 I spent on the whole wedding."
     </div>
     <div class="testi-attr">- Ellie &amp; Tom · Summer Wedding · Oxfordshire</div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head">
+      <div class="sec-label">08 - Real reviews</div>
+      <h2 class="sec-h">The <span class="serif">receipts.</span></h2>
+    </div>
+    <div class="reviews__widget">
+      <script defer async src='https://cdn.trustindex.io/loader.js?f13dd0f701de369acd069145a71'></script>
+    </div>
   </div>
 </section>
 
